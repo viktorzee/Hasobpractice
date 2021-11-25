@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rightside-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification {
+  position: relative;
+  bottom: 25px;
+  left: 130px;
+}
+.logout {
+  position: relative;
+  bottom: 50px;
+  left: 150px;
+}
+
+.mapoly-container {
+  max-height: 20%;
+  background-color: blue;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.moshood {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 25px;
+  right: 10px;
+}
+a {
+  color: white;
+}
+p {
+  margin-bottom: 0;
+}
+
+.last-item {
+  margin-bottom: 1rem;
+}
+span {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.quicklink-header {
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 5px;
+}
+.quicklink {
+  color: black;
+  margin-top: 3rem;
+}
+.quicklinks {
+  color: black;
+  padding-left: 10px;
+}

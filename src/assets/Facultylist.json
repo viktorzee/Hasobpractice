@@ -1,0 +1,50 @@
+[
+        {
+        "faculty" : "Faculty of Engineering",
+        "location" : "Engineering Block",
+        "phoneNumber" : "08055916394",
+        "email": "facultyofengineering@mapolly.edu.org"
+    },
+    {
+        "faculty" : "Faculty of Engineering",
+        "location" : "Engineering Block",
+        "phoneNumber" : "08055916394",
+        "email": "facultyofengineering@mapolly.edu.org"
+    },
+    {
+        "faculty" : "Faculty of Science",
+        "location" : "Science Block",
+        "phoneNumber" : "08055916394",
+        "email": "facultyofengineering@mapolly.edu.org"
+    },
+    {
+        "faculty" : "Faculty of Science",
+        "location" : "Science Block",
+        "phoneNumber" : "08055916394",
+        "email": "facultyofengineering@mapolly.edu.org"
+    },
+    {
+        "faculty" : "Faculty of Management",
+        "location" : "Agric Building",
+        "phoneNumber" : "08055916394",
+        "email": "facultyofengineering@mapolly.edu.org"
+    },
+    {
+        "faculty" : "Faculty of Agriculture",
+        "location" : "Agric Building",
+        "phoneNumber" : "08055916394",
+        "email": "facultyofengineering@mapolly.edu.org"
+    },
+    {
+        "faculty" : "Faculty of Management",
+        "location" : "Management Building",
+        "phoneNumber" : "08055916394",
+        "email": "facultyofengineering@mapolly.edu.org"
+    },
+    {
+        "faculty" : "Faculty of Management",
+        "location" : "Management Building",
+        "phoneNumber" : "08055916394",
+        "email": "facultyofengineering@mapolly.edu.org"
+    }
+]

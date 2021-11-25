@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.moshood-abiola-text {
+  position: relative;
+  top: 200px;
+  align-items: center;
+  left: 50px;
+  max-width: 40%;
+}
+
+.header-text {
+  color: blue;
+  padding-bottom: 100px;
+}
+
+.sign-in-btn {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.student-pics {
+  width: 100%;
+}
+.register {
+  background-color: gray;
+  width: 100px;
+  box-shadow: 100px;
+  color: white;
+}
+.login {
+  background-color: gray;
+  width: 100px;
+  box-shadow: 100px;
+  color: white;
+}
+
+.register :hover {
+  background-color: blue;
+}
+.login:hover {
+  background-color: blue;
+}
+.register :active {
+  background-color: blue;
+}
+.login:active {
+  background-color: blue;
+}
+
+.pass_message {
+  font-size: 10px;
+  color: gray;
+}
+.modal-subheading {
+  padding-left: 25px;
+}
+h2 {
+  color: blue;
+  padding: 30px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+input {
+  width: 25vw;
+}
