@@ -21,12 +21,10 @@
   width: 75%;
 }
 
-.add-sort-btn {
+.add-filter-container {
   display: flex;
-  justify-content: flex-end;
   position: relative;
-  left: 550px;
-  padding: 0.1rem 0.5rem;
+  left: 420px;
 }
 
 .nav-section {
@@ -41,6 +39,46 @@
   box-shadow: 50px;
 }
 
+.view-link {
+  padding-right: 5px;
+  border-right: groove;
+  text-decoration: none;
+}
+.edit-link {
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+.page-numbers {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.code {
+  display: flex;
+}
+
+.input {
+  margin-left: 10px;
+}
+
+.save-btn {
+  position: relative;
+  left: 300px;
+}
+.btn {
+  padding: 0;
+}
+.save-btn,
+.cancel-btn:hover {
+  background-color: blue;
+}
+
+.file-upload {
+  position: relative;
+  top: 52px;
+}
+
 .right-sidebar {
   width: 20%;
   display: flex;
@@ -53,4 +91,14 @@
 .quicklink {
   background-color: white;
   display: block;
+}
+p {
+  color: blue;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form-select {
+  padding: 0;
+  margin-bottom: 20px;
 }

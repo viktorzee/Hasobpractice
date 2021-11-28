@@ -2,16 +2,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from "reactstrap";
+import { Collapse, Nav, Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap";
 import Logo from '../../assets/Logo.png';
-
+import './navbar.css'
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
     return(
         <div className="">
-            <Navbar color="light" light   expand='md'>
-                <NavbarBrand>
+            <Navbar color="light" light   expand='md' fill justified className="navbar-class">
+            <NavbarBrand >
                     <Link to ="/"><img 
                         src={Logo} 
                         alt='logo'
@@ -20,9 +20,9 @@ function NavBar() {
                         className='logo'/>
                    </Link>
                 </NavbarBrand>
-                <NavbarToggler onClick={() => { setIsOpen(!isOpen) }}/>
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className='mr-auto' navbar style={{display:"flex", alignContent: "flex-end"}}>
+                    <Nav className='mr-auto' navbar expand >
+                        
                             <NavItem>
                                 <NavLink href="./school">School</NavLink>
                             </NavItem>

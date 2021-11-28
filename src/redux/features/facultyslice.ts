@@ -53,3 +53,21 @@ import { createSlice } from '@reduxjs/toolkit'
 // export const {CREATE_FACULTY_REQUEST, CREATE_FACULTY_SUCCESS, CREATE_FACULTY_FAIL} = addNewFaculty.actions
 
 // export default addNewFaculty.reducer
+
+// export interface FacultyForm {
+//     isProcessing?: boolean;
+//     submitToken?: string
+//     facultyForm?: any
+// }
+
+// const initalState: FacultyForm = {
+//     facultyForm: {
+//         department: "",
+//         id: "",
+//         phone: "",
+//         email: "",
+//         webpage: "",
+//         address: "",
+//         head_of_department: ""
+//     }
+// }

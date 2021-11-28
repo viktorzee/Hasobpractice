@@ -20,13 +20,16 @@
 }
 
 .mapoly-container {
-  max-height: 20%;
   background-color: blue;
-  width: 20vw;
+  width: 17vw;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   margin-bottom: 3rem;
+  position: relative;
+  right: 10px;
+  bottom: 25px;
   /* justify-content: center; */
   /* align-items: center; */
 }
@@ -34,7 +37,9 @@
 .logo-text {
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  position: relative;
+  bottom: 15px;
+  padding-left: 5px;
 }
 
 .moshood {
@@ -50,6 +55,7 @@ a {
 }
 p {
   margin-bottom: 0;
+  padding-left: 5px;
 }
 
 .last-item {
@@ -57,7 +63,16 @@ p {
 }
 span {
   padding-left: 10px;
-  padding-right: 5px;
+}
+.polytechnic {
+  display: block;
+}
+.mapolyLinks {
+  display: contents;
+}
+.react-calendar {
+  position: relative;
+  bottom: 35px;
 }
 .quicklink-header {
   color: black;
@@ -65,9 +80,15 @@ span {
   font-size: 10px;
   padding-top: 5px;
 }
+
+.react-calendar__navigation button {
+  min-width: 14px;
+}
 .quicklink {
   color: black;
   margin-top: 3rem;
+  position: relative;
+  bottom: 35px;
 }
 .quicklinks {
   color: black;

@@ -35,20 +35,20 @@ const RightSideBar = ({ handleLogout}: RightSideBarProps) => {
                 <div className="mapoly-container">
                     <div className="logo-text">
                         <div>
-                            <img src={Logo} alt='Logo' className='logo'/>
+                            <img src={Logo} alt='Logo' className='logo' width="40px" />
                         </div>
                         <div>
-                            <h3 className="moshood">Moshood Abiola Polytechnic</h3>
+                            <h3 className="moshood">Moshood Abiola Polytechnic<span className="polytechnic">Abeokuta</span></h3>
                         </div>
                         
                     </div>
                     <div>
-                        <p><a href = "mailto:rector@mapoly.edu.ng?subject=Enquires"><span><FaEnvelope size="10px"/></span> rector@mapoly.edu.ng</a></p>
-                        <p><a href = "tel:+2347063331234"><span><FaPhone size="10px"/></span> +2347063331234</a></p>
-                        <p className="last-item"><a href = "https://mapoly.edu.org"><span><FaLink size="10px"/></span> https://mapoly.edu.org</a></p>
+                        <p style={{marginTop:"10px"}}><a href = "mailto:rector@mapoly.edu.ng?subject=Enquires"><span className= "mapolyLinks"><FaEnvelope size="10px"/></span> rector@mapoly.edu.ng</a></p>
+                        <p><a href = "tel:+2347063331234"><span className= "mapolyLinks"><FaPhone size="10px"/></span> +2347063331234</a></p>
+                        <p className="last-item"><a href = "https://mapoly.edu.org"><span className= "mapolyLinks"><FaLink size="10px"/></span> https://mapoly.edu.org</a></p>
                     </div>
                 </div>
-                <div className="class1 class2">
+                <div>
                     <Calender 
                         onChange={onChange}
                         value={value}

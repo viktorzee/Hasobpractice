@@ -5,9 +5,9 @@ export interface FacultyState{
      loading?: boolean;
      error?: any;
      faculty: {
-         name?:any;
-         id?: any;
-         code?: any;
+         name:string;
+         id: number | string;
+         code: number | string;
          type?: any;
          webpage?: any;
          address?: any;

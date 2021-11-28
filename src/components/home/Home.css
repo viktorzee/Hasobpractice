@@ -15,6 +15,9 @@
   left: 50px;
   max-width: 40%;
 }
+.polytext {
+  display: block;
+}
 
 .header-text {
   color: blue;
@@ -75,4 +78,38 @@ label {
 }
 input {
   width: 25vw;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  /* background-color: white; */
+  /* box-shadow: 50px; */
+}
+.modal-contents {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+}
+h2 {
+  color: blue;
+  padding: 30px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+input {
+  width: 25vw;
+}
+
+.pass_message {
+  font-size: 10px;
+  color: gray;
 }

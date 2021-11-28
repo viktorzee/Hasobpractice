@@ -1,0 +1,8 @@
+.navbar-class {
+  background-color: blue !important;
+}
+
+.logo {
+  position: relative !important;
+  bottom: 0 !important;
+}

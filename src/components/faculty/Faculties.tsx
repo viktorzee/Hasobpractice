@@ -1,28 +1,22 @@
 import { useState } from "react";
 import LeftSideBar from "../NavBar/LeftSideBar";
-import NewFacultyModal from "./NewFacultyModal";
 import data from '../../assets/Facultylist.json'
+import dataOne from '../../assets/programData.json'
 import { Button, Col, Container, Form, FormGroup, Input, Label, Modal, ModalBody, ModalHeader, Row } from "reactstrap";
 import Logo from '../../assets/Logo.png'
 import { Link } from "react-router-dom";
 import RightSideBar from "../NavBar/RightSideBar";
 import './faculties.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import RightSideBar from "../NavBar/RightSideBar";
 
-type facultiesModal= {
-    toggle : () => void;
-    toggleEdit : () => void;
 
-}
 
-const Faculties = ({ toggle, toggleEdit}: facultiesModal) => {
+const Faculties = () => {
     const [addModal, setAddModal] = useState(false);
     const [editModal, seteditModal] = useState(false);
-    const [faculties, setFaculties] = useState(data)
-    toggle = () => setAddModal(!addModal);
-    toggleEdit =()=> seteditModal(!editModal)
-
+    const [faculties, setFaculties] = useState(data);
+    const toggle:any = () => setAddModal(!addModal);
+    const toggleEdit:any =()=> seteditModal(!editModal)
     
     return(
         <div className="program-container">
@@ -30,21 +24,34 @@ const Faculties = ({ toggle, toggleEdit}: facultiesModal) => {
                 <LeftSideBar />
             </div>
             <div className="center-view">
-                <div className ="nav-section">
-                    <div className="semester">Semester</div>
-                    <div>
-                        <div >
-                            <Button className="add-sort-btn" onClick={toggle}>Add</Button>
+            <div className ="nav-section">
+                    <div>Faculties</div>
+                    <div className="add-filter-container">
+                        <div style={{marginRight:"20px"}}>
+                            <Button onClick={toggle}>Add +</Button>
                         </div>
+                        <div>
+                        <Input 
+                                    type="select"
+                                    name="select"
+                                    id= "filter"
+                                    className = "filterItems"
+                            >
+                                <option  >Filter</option>
+                                <option value="byCreated">By Created</option>
+                                <option value="byUpdated">By updated</option>
+                                <option value="alphabetical">Alphabetical</option>
+                            </Input>
+                        </div>                            
                     </div>
-                </div>             
+                    </div>            
                 <Container>
                     <Row xs={2} noGutters>
-                    {faculties.map(faculty => {
+                    {faculties.map((faculty, index) => {
                         return(
-                            <Col  className="bg-light-border col-class">
+                            <Col className="bg-light-border col-class">
                                 <div><img src={Logo} alt="logo" /></div>
-                                <div>
+                                <div key= {index}>
                                     <h3>{faculty.faculty}</h3>
                                    <p>{faculty.location}</p>
                                    <p>{faculty.phoneNumber}</p>
@@ -58,6 +65,10 @@ const Faculties = ({ toggle, toggleEdit}: facultiesModal) => {
                    </Row>
                 </Container>
             </div>
+
+            
+            
+            
             {/*Add new faculty modal */}
             {/* {showModal === true && (
                 <div className = "new-facultyModal-container">

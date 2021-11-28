@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { Nav, NavItem, NavLink } from "reactstrap";
 import { FaDesktop, FaHashtag, FaAddressCard, FaBookOpen, FaBinoculars, FaCog, FaRoute } from "react-icons/fa";
 import './leftsidebar.css'
@@ -24,7 +22,7 @@ const LeftSideBar = () => {
                     <NavLink href="/faculties" className='link'><FaBookOpen size="20px"/>Faculty</NavLink>
                     </NavItem>
                 <NavItem>
-                    <NavLink href="#" className='link'><FaBookOpen size="20px"/>Programs</NavLink>
+                    <NavLink href="/programs" className='link'><FaBookOpen size="20px"/>Programs</NavLink>
                     </NavItem>
                 <NavItem>
                     <NavLink href="#" className='link'><FaBinoculars size="20px"/>Class</NavLink>

@@ -1,0 +1,72 @@
+[
+    {    
+        "id": 1,
+        "code": "EE01",
+        "name": "Electrical Engineering",
+        "department_id": "Electrical",
+        "degree": "Undergraduate - B.Eng"
+    },
+    {    
+        "id": 2,
+        "code": "ME01",
+        "name": "Mechnical Engineering",
+        "department_id": "Mechnical",
+        "degree": "Undergraduate - B.Eng"
+    },
+    {    
+        "id": 3,
+        "code": "CHE",
+        "name": "Chemical Engineering",
+        "department_id": "Chemical",
+        "degree": "Undergraduate - B.Eng"
+    },
+    {    
+        "id": 4,
+        "code": "CVE",
+        "name": "Civil Engineering",
+        "department_id": "Civil",
+        "degree": "Undergraduate - B.Eng"
+    },
+    {    
+        "id": 5,
+        "code": "MTE01",
+        "name": "Metallurgical Engineering",
+        "department_id": "Metallurgy",
+        "degree": "Undergraduate - B.Eng"
+    },
+    {   
+        "id": 6,
+        "code": "AGE01",
+        "name": "Agricultural Engineering",
+        "department_id": "Agriculture",
+        "degree": "Undergraduate - B.Eng"
+    },
+    {   
+        "id": 7,
+        "code": "FST01",
+        "name": "Food Science & Technology",
+        "department_id": "Food Science",
+        "degree": "Undergraduate - B.Eng"
+    },
+    {   
+        "id": 8,
+        "code": "EVT01",
+        "name": "Environmental Technology",
+        "department_id": "Environment",
+        "degree": "Undergraduate - B.Eng"
+    },
+    {   
+        "id": 9,
+        "code": "PMT01",
+        "name": "Polymer/Textile Engineering",
+        "department_id": "Polymer",
+        "degree": "Undergraduate - B.Eng"
+    },
+    {
+        "id": 10,
+        "code": "PET01",
+        "name": "Petroleum Engineering",
+        "department_id": "Petroleum",
+        "degree": "Undergraduate - B.Eng"
+    }
+]
