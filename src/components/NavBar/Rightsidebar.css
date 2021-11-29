@@ -22,7 +22,7 @@
 .mapoly-container {
   background-color: blue;
   width: 17vw;
-  height: 40vh;
+  height: 120px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;

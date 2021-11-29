@@ -19,13 +19,13 @@ const Faculties = () => {
     const toggleEdit:any =()=> seteditModal(!editModal)
     
     return(
-        <div className="program-container">
+        <div className="faculty-container">
             <div className="left-sidebar">
                 <LeftSideBar />
             </div>
             <div className="center-view">
             <div className ="nav-section">
-                    <div>Faculties</div>
+                    <div><p className="nav-text">Faculties</p></div>
                     <div className="add-filter-container">
                         <div style={{marginRight:"20px"}}>
                             <Button onClick={toggle}>Add +</Button>
@@ -45,13 +45,13 @@ const Faculties = () => {
                         </div>                            
                     </div>
                     </div>            
-                <Container>
-                    <Row xs={2} noGutters>
+                <div className="faculty-list-container">
+                    <div className="faculty-list">
                     {faculties.map((faculty, index) => {
                         return(
-                            <Col className="bg-light-border col-class">
+                            <div className="faculty-details">
                                 <div><img src={Logo} alt="logo" /></div>
-                                <div key= {index}>
+                                <div key= {index} className="faculty-data">
                                     <h3>{faculty.faculty}</h3>
                                    <p>{faculty.location}</p>
                                    <p>{faculty.phoneNumber}</p>
@@ -59,11 +59,11 @@ const Faculties = () => {
                                    <span><Link to = "" onClick={toggleEdit}>Edit</Link></span>
                                    <span><Link to='../programs/ViewProgram'>Delete</Link></span>
                                </div>
-                           </Col>
+                           </div>
                        )
                    })}
-                   </Row>
-                </Container>
+                   </div>
+                </div>
             </div>
 
             

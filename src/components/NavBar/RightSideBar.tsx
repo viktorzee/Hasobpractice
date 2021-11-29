@@ -52,7 +52,7 @@ const RightSideBar = ({ handleLogout}: RightSideBarProps) => {
                     <Calender 
                         onChange={onChange}
                         value={value}
-                        className="date"
+                        className='react-calendar '
                     />
                 </div>
                 <div className="quicklink">

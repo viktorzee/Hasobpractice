@@ -10,7 +10,7 @@ const LeftSideBar = () => {
                 >
                 <div className="sidebar-sticky"></div>
                 <NavItem >
-                    <NavLink href = "/" className='link'><FaDesktop size="20px"/></NavLink>
+                    <NavLink href = "/" className='link' style={{marginBottom:"40px"}}><FaDesktop size="20px"/></NavLink>
                     </NavItem>
                 <NavItem>
                     <NavLink href="#" className='link'><FaHashtag size="20px"/>Dashboard</NavLink>
