@@ -13,11 +13,11 @@
   bottom: 25px;
   left: 130px;
 }
-.logout {
+/* .logout {
   position: relative;
   bottom: 50px;
   left: 150px;
-}
+} */
 
 .mapoly-container {
   background-color: blue;
@@ -70,10 +70,17 @@ span {
 .mapolyLinks {
   display: contents;
 }
+
 .react-calendar {
+  width: 350px;
   position: relative;
   bottom: 35px;
 }
+.react-calendar__navigation {
+  height: 0px;
+  margin-bottom: 2em;
+}
+
 .quicklink-header {
   color: black;
   text-align: center;

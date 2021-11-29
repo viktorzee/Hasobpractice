@@ -128,16 +128,6 @@ img {
   background-color: lightgray;
 }
 
-.react-calendar {
-  width: 50px;
-  height: 0px;
-  margin-bottom: 2em;
-}
-.react-calendar__navigation {
-  height: 0px;
-  margin-bottom: 2em;
-}
-
 .quicklink {
   background-color: white;
   display: block;
