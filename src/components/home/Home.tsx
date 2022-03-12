@@ -62,7 +62,7 @@ const Home = () => {
             <Modal isOpen= {modal}
                 toggle= {toggleModal}
             >
-                        <ModalHeader style={{textAlign: "center"}}>Welcome Back</ModalHeader>
+                            <h2 className='modal-header'>Welcome Back</h2>
                             <p className="modal-subheading">Learn on your own, study coursework and  handouts at your convienent time</p>
                         <ModalBody>
                             <Form onSubmit={handleSubmit}>

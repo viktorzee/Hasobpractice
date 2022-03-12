@@ -3,40 +3,51 @@
   margin: 0;
 }
 
+@media (min-width: 768px) {
+    .faculty-list-container {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+}
+
 .faculty-container {
   display: flex;
-  flex-direction: row;
 }
-.left-sidebar {
-  width: 5%;
-  background-color: blue;
-}
+
 
 .center-view {
   border-radius: 25px;
-  padding: 10px;
+  margin-left: 6rem;
   font-size: 10px;
   width: 75%;
 }
 
-.add-sort-btn {
+.heading{
   display: flex;
-  justify-content: flex-end;
-  position: relative;
-  left: 550px;
-  padding: 0.1rem 0.5rem;
+  justify-content: space-between;
 }
 
-.add-filter-container {
-  display: flex;
-  position: relative;
-  left: 420px;
+.text-container{
+  background-color: none;
 }
 
-.nav-section {
-  display: flex;
-  flex-direction: row;
-  /* padding: 20px; */
+.faculty-text {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.addNew {
+  margin-right: 25px;
+  padding: 0px
+}
+
+.btn{
+  background-color: blue;
+  margin-right: 10px;
+  /* font-size: 1.5rem; */
+}
+
+.select{
+  font-size: 1rem;
 }
 
 .semester {
@@ -45,31 +56,51 @@
 }
 
 .faculty-list-container {
-  border: 1px solid black;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat( minmax(0, 1fr));
+  gap: 1rem;
+  margin-left: 1.75rem/* 28px */;
+  margin-right: 1.75rem;
+  margin-top: 1.75rem;
 }
 
 .faculty-list {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  box-sizing: border-box;
-}
-
-.faculty-list > div {
-  width: 50% !important;
-  gap: 10px !important;
+  grid-column: span 6 / span 6;
+  border-radius: 0.375rem;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+    border-width: 4px;
+    --tw-border-opacity: 1;
+    border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+    padding: 1.0rem;
 }
 
 .faculty-details {
-  display: flex;
-  background-color: lightgray;
-  border-radius: 15px;
-  padding-top: 5px;
-  height: 160px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+ 
 }
 
-.text-container {
-  background-color: lightgray;
+.faculty-logo{
+   grid-column: span 2 / span 2;
+}
+
+.faculty-data{
+  grid-column: span 10 / span 10;
+  margin-left: 2rem;
+}
+
+.faculty-data > h2{
+  overflow-wrap: break-word;
+  padding: 0.25rem/* 4px */;
+   --tw-text-opacity: 1;
+    color: rgba(16, 39, 124, var(--tw-text-opacity));
+}
+.faculty-data  p {
+   overflow-wrap: break-word;
+   --tw-text-opacity: 1;
 }
 
 .col-class {
@@ -89,46 +120,3 @@ img {
   border-radius: 50px;
 }
 
-.code {
-  display: flex;
-}
-.input {
-  margin-left: 10px;
-}
-.sav-btn {
-  position: relative;
-  left: 300px;
-}
-.btn {
-  padding: 0;
-}
-
-.form-select {
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.nav-text {
-  color: blue;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.file-upload {
-  position: relative;
-  top: 52px;
-}
-
-.right-sidebar {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
-  background-color: lightgray;
-}
-
-.quicklink {
-  background-color: white;
-  display: block;
-}

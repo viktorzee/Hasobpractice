@@ -1,8 +1,18 @@
 .navbar-class {
   background-color: blue !important;
+  
+  }
+
+.collapse{
+  justify-content: flex-end;
 }
 
 .logo {
-  position: relative !important;
+  position: absolute !important;
   bottom: 0 !important;
+  font-size: 2rem;
+}
+
+.nav-link{
+  margin-right: 1rem;
 }

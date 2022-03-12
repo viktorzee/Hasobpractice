@@ -17,6 +17,7 @@
 }
 .polytext {
   display: block;
+  padding: 0;
 }
 
 .header-text {
@@ -28,6 +29,7 @@
   padding-top: 30px;
   display: flex;
   justify-content: space-around;
+  text-align: left
 }
 .student-pics {
   width: 100%;
@@ -64,6 +66,7 @@
 }
 .modal-subheading {
   padding-left: 25px;
+  text-align: center;
 }
 h2 {
   color: blue;
@@ -112,4 +115,9 @@ input {
 .pass_message {
   font-size: 10px;
   color: gray;
+}
+
+.modal-header{
+  text-align: center;
+  display: grid;
 }

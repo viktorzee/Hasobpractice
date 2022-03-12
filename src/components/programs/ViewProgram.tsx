@@ -2,19 +2,17 @@ import { Button, Table } from "reactstrap"
 import LeftSideBar from "../NavBar/LeftSideBar"
 import RightSideBar from "../NavBar/RightSideBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-type ViewProgramProps = {
-    handleFullTimeClick: () => void ;
-    handlePartTimeClick:  () => void;
-}
+import './ViewProgram.css'
 
 
 
-const ViewProgram = ({handleFullTimeClick, handlePartTimeClick}: ViewProgramProps) => {
-    handleFullTimeClick = () => {
+
+
+const ViewProgram = () => {
+    const handleFullTimeClick = ():void => {
 
     }
-    handlePartTimeClick = () => {
+    const handlePartTimeClick = ():void => {
 
     }
     
@@ -61,73 +59,10 @@ const ViewProgram = ({handleFullTimeClick, handlePartTimeClick}: ViewProgramProp
                             <tr>
                                 <th>Total Credit: <span>23</span>  </th> <th>Add</th> <th>delete</th> <th>Add+</th>
                             </tr>
-                            <tr>
-                                <td>EE101- Introduction to Eletrical Engineering</td>
-                                <td>Introduction to Physics</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>MATH101-Engineering Mathematics</td>
-                                <td>Engine Drawing</td>
-                                <td>Workshop Practice</td>
-                            </tr>
-                            <tr>
-                                <th>Total Credit: <span>23</span>  </th> <th>Add</th> <th>delete</th> <th>Add+</th>
-                            </tr>
-                            <tr>
-                                <td>EE101- Introduction to Eletrical Engineering</td>
-                                <td>Introduction to Physics</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>MATH101-Engineering Mathematics</td>
-                                <td>Engine Drawing</td>
-                                <td>Workshop Practice</td>
-                            </tr>
-                            <tr>
-                                <th>Total Credit: <span>23</span>  </th> <th>Add</th> <th>delete</th> <th>Add+</th>
-                            </tr>
-                            <tr>
-                                <td>EE101- Introduction to Eletrical Engineering</td>
-                                <td>Introduction to Physics</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>MATH101-Engineering Mathematics</td>
-                                <td>Engine Drawing</td>
-                                <td>Workshop Practice</td>
-                            </tr>
-                            <tr>
-                                <th>Total Credit: <span>23</span>  </th> <th>Add</th> <th>delete</th> <th>Add+</th>
-                            </tr>
-                            <tr>
-                                <td>EE101- Introduction to Eletrical Engineering</td>
-                                <td>Introduction to Physics</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>MATH101-Engineering Mathematics</td>
-                                <td>Engine Drawing</td>
-                                <td>Workshop Practice</td>
-                            </tr>
-                            <tr>
-                                <th>Total Credit: <span>23</span>  </th> <th>Add</th> <th>delete</th> <th>Add+</th>
-                            </tr>
-                            <tr>
-                                <td>EE101- Introduction to Eletrical Engineering</td>
-                                <td>Introduction to Physics</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>CSC101-Introduction to Computer Programming</td>
-                                <td>MATH101-Engineering Mathematics</td>
-                                <td>Engine Drawing</td>
-                                <td>Workshop Practice</td>
-                            </tr>
-                            <tr>
-                                <th>Total Credit: <span>23</span>  </th> <th>Add</th> <th>delete</th> <th>Add+</th>
-                            </tr>
                         </tbody>
-                        <tfoot>
-                            
-                        </tfoot>
-                    </Table>
+                        </Table>
                     </div>
-                </div>
+                            
             </div>
             <div className="right-sidebar">
                <div className="right-sidenav">
@@ -135,7 +70,8 @@ const ViewProgram = ({handleFullTimeClick, handlePartTimeClick}: ViewProgramProp
                 </div> 
             </div>
         </div>
+        </div>
     )
 }
 
-export default ViewProgram
+export default ViewProgram;
